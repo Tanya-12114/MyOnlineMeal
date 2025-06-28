@@ -1,0 +1,105 @@
+@media (max-width: 768px) {
+    /* Navbar */
+    #navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 2rem;
+        color: white;
+        background: none;
+        border: none;
+    }
+
+    #navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0.9);
+        width: 160px;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    #navbar ul.active {
+        display: flex;
+    }
+
+    #navbar ul li a {
+        padding: 10px;
+        font-size: 16px;
+        color: white;
+    }
+
+    #home {
+        height: auto;
+        padding: 60px 15px 30px;
+    }
+
+    #home h1 {
+        font-size: 2.2rem;
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+
+    .h-primary {
+        font-size: 2rem;
+    }
+
+    .h-secondary {
+        font-size: 1.3rem;
+    }
+
+    /* Services stacking */
+    #services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    /* Clients */
+    #clients {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .client-item img {
+        width: 80%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    /* Contact */
+    #contact-box form {
+        width: 100%;
+    }
+
+    input,
+    textarea {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* Buttons */
+    .btn,
+    .creative-btn {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+        width: 80%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    footer .center {
+        font-size: 0.9rem;
+    }
+}

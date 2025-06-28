@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Food Delivery Service in India | MyOnlineMeal.com</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="phone.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
 </head>
 
@@ -16,6 +16,7 @@
         <div id="logo">
             <img src="logo.jpg" alt="MyOnlineMeal.com">
         </div>
+        <button class="menu-toggle">&#9776;</button>
         <ul>
             <li class="item"><a href="#home">Home</a></li>
             <li class="item"><a href="#services-container">Services</a></li>
@@ -26,7 +27,7 @@
 
     <section id="home">
         <h1 class="h-primary">Welcome to MyOnlineMeal</h1>
-        <p> "Craving something delicious? Get your favorite meals delivered hot & fresh—fast and hassle-free!" </p>
+        <p>"Craving something delicious? Get your favorite meals delivered hot & fresh—fast and hassle-free!"</p>
     </section>
 
     <section id="services-container">
@@ -35,25 +36,25 @@
             <div class="box">
                 <img src="img1.jpeg" alt="" class="blend-logo">
                 <h2 class="h-secondary center">Food Catering</h2>
-                <p class="center"> "From intimate gatherings to grand celebrations, we serve fresh, delicious, and
+                <p class="center">"From intimate gatherings to grand celebrations, we serve fresh, delicious, and
                     beautifully presented meals. Enjoy stress-free catering with flavorful dishes and top-notch
-                    service—while you make memories, we handle the feast!" </p>
+                    service—while you make memories, we handle the feast!"</p>
             </div>
             <div class="box">
                 <img src="img2.jpg" alt="" class="blend-logo">
                 <h2 class="h-secondary center">Bulk Ordering</h2>
-                <p class="center"> Feeding a crowd? Order fresh, high-quality meals in bulk—perfectly packed and
-                    delivered on time for any event. Hassle-free, delicious, and convenient. Place your order today!
-                </p>
+                <p class="center">Feeding a crowd? Order fresh, high-quality meals in bulk—perfectly packed and
+                    delivered on time for any event. Hassle-free, delicious, and convenient. Place your order today!</p>
             </div>
             <div class="box">
                 <img src="img3.jpg" alt="">
                 <h2 class="h-secondary center">Food Delivery</h2>
-                <p class="center"> Craving something delicious? Let us bring your favorite meals right to your
-                    doorstep—hot, fresh, and fast. Enjoy a seamless food delivery experience with just a tap!" </p>
+                <p class="center">Craving something delicious? Let us bring your favorite meals right to your
+                    doorstep—hot, fresh, and fast. Enjoy a seamless food delivery experience with just a tap!</p>
             </div>
         </div>
     </section>
+
     <section id="client-section">
         <h1 class="h-primary center">Our Clients</h1>
         <div id="clients">
@@ -63,7 +64,6 @@
             <div class="client-item">
                 <img src="logo3.png" alt="Our Client" class="blend-logo">
             </div>
-
             <div class="client-item">
                 <img src="logo4.png" alt="Our Client" class="blend-logo">
             </div>
@@ -71,7 +71,6 @@
                 <img src="logo5.png" alt="Our Client" class="blend-logo">
             </div>
         </div>
-
     </section>
 
     <section id="contact">
@@ -96,7 +95,7 @@
                 </div>
                 <div class="form-group center">
                     <button type="submit" class="btn creative-btn">Submit</button>
-                </div>                
+                </div>
             </form>
         </div>
     </section>
@@ -106,6 +105,16 @@
             Copyright &copy; www.myOnlineMeal.com. All rights reserved!
         </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggle = document.querySelector(".menu-toggle");
+            const navList = document.querySelector("#navbar ul");
+            toggle.addEventListener("click", () => {
+                navList.classList.toggle("active");
+            });
+        });
+    </script>
 </body>
 
 </html>
