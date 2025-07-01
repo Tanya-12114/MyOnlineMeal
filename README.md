@@ -3,7 +3,11 @@
 **MyOnlineMeal** is a responsive food delivery service website built with **HTML, CSS**, and **PHP** for backend integration. It includes interactive UI sections, form handling, and stores user messages in a MySQL database.
 
 ---
+## Live Website
 
+Click below to view the site:
+
+👉 [https://tanya-12114.github.io/MyOnlineMeal/](https://tanya-12114.github.io/MyOnlineMeal/)
 ##  Features
 
 - Responsive design for desktop and mobile
